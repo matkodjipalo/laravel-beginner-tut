@@ -26,17 +26,7 @@
 		  	<button type="submit" class="btn btn-primary">Publish</button>
 		  </div>
 
-		  <div class="form-group">
-			<div class="danger alert-danger">
-
-				<ul>
-					@foreach ($errors->all() as $error)
-						<li>{{ $error }}</li>
-					@endforeach
-				</ul>
-				
-			</div>
-		</div>
+		  @include ('layouts.errors')
 
 		</form>
 	</div>
